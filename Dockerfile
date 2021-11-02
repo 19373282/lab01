@@ -1,4 +1,4 @@
 FROM openjdk:15
-COPY ./ /myapp/
+COPY . /myapp/
 WORKDIR /myapp/
-RUN javac src/Main.java 
+RUN javac -cp src/ src/Main.java -d dst/
